@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css ">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				
+				<section data-markdown>
+						<textarea data-template>
+								## OpenJDK
+								
+								A quick 10min run-through
+
+
+								_Thomas Stüfe_
+
+
+								_[@tstuefe](https://twitter.com/tstuefe) | [stuefe.de](https://stuefe.de)_
+						</textarea>
+				</section>
+<!--
+				<section data-markdown>
+						<textarea data-template>
+								### Disclaimer
+								
+								I do not speak for SAP, nor the OpenJDK project.
+								
+								I only speak for my (very subjective) self.
+								
+								Nothing I say is to be taken seriously.
+
+							</textarea>
+				</section>
+-->
+
+				<section data-markdown>
+						<textarea data-template>
+								### History
+
+								2007: Sun publishes JDK under under __GPLv2 with Classpath Extension__.
+								
+						</textarea>
+				</section>
+
+				<section data-markdown>
+						<textarea data-template>
+								### History (cont.)
+								
+								- 2008: Oracle aquires BEA.
+								- 2010: Oracle aquires Sun Microsystems... RIP Sun :,(
+									
+								But the OpenJDK lives on, now with developers from Sun and JRockit.
+								
+						</textarea>
+				</section>
+
+				<section data-markdown>
+						<textarea data-template>
+								### SAP involved since 2011
+
+								- Ports: ppc64, s390, AIX
+								- Lots of improvements
+								- 11u maintainers (with Red Hat)
+
+						</textarea>
+				</section>
+
+				<section data-markdown>
+						<textarea data-template>
+								... and we also have a OpenJDK based VM :)
+								
+								[https://sapmachine.io](https://sapmachine.io)
+																
+								OpenJDK fork with a few enhancements.
+
+						</textarea>
+				</section>
+
+
+				<section data-markdown>
+						<textarea data-template>
+								
+								### LOC
+
+								- OpenJDK sources: ~4m 
+									- Java 2.5m
+									- C/C++ 1.4m
+								- OpenJDK tests: ~3m  (mostly Java)
+								-------
+								Total: ~8m 
+
+								(5.5.2 Linux kernel: ~19m )
+
+						</textarea>
+				</section>
+
+				<section data-markdown>
+						<textarea data-template>
+								## Contributors
+
+								About ~1000 registered Authors 
+								(http://openjdk.java.net/census) ...
+								
+						</textarea>
+				</section>
+
+				<section data-markdown>
+						<textarea data-template>
+								...from many companies:
+
+								Oracle, Red Hat, SAP, Google,
+
+								Arm, Bellsoft, Amazon, IBM, Azul...
+
+						</textarea>
+				</section>
+
+				<section data-markdown>
+						<textarea data-template>
+								... and many independent developers!
+						</textarea>
+				</section>
+
+				<section data-markdown>
+						<textarea data-template>
+
+								![Contributor makeup](./contributors-jdk13.jpeg "Contributors")
+								
+						</textarea>
+				</section>
+
+
+				<section data-markdown>
+					<textarea data-template>
+						Why take part?
+					</textarea>
+				</section>
+
+
+				<section data-markdown>
+					<textarea data-template>
+						### 1 
+						
+						Interesting technology. Vast field. Fun & lots of experience to be gained.
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						There is always something new:
+						
+						Valhalla, Loom, Panama...
+					</textarea>
+				</section>
+
+				<section data-markdown>
+						<textarea data-template>
+							### 2
+
+							The community is competent,
+
+							professional,
+							
+							and really quite friendly :)
+						</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						Communication mainly via mailing lists and IRC.
+
+						Fosdem Free Java Devroom
+
+						Committers Workshop (after Fosdem and after JVMLS)
+					</textarea>
+			</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### 3
+
+						Healthy code base.
+						
+						Constant rejuvenation. Not much bitrot. Good balance between new and old.
+
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						How take part?
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Reading
+
+						Subscribe to our [mailing lists](http://mail.openjdk.java.net/mailman/listinfo "Read mailing list").
+						
+						Yes, there are too many :)
+
+						Suggestions: hotspot-dev, jdk-dev, hotspot-compiler-dev, hotspot-gc-dev, panama-dev, loom-dev ...
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Discussions
+
+						There are many new features. 
+						
+						Tests and feedback (questions too) are important and appreciated.
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Get the source
+
+						[Mercurial repos](http://hg.openjdk.java.net/jdk/jdk/)
+						
+						[RO Github mirror](https://github.com/openjdk/jdk)
+
+					</textarea>
+				</section>
+
+
+				<section data-markdown>
+					<textarea data-template>
+						### Read the code
+
+						Unfortunately, IDE support is a moving target and not well documented :(
+
+						Suggestions:
+						- Eclipse CDT for hotspot sources
+						- Intellij (also community edition) for the JDK.
+
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Contribute patches
+						
+						Hard, but not impossible. 
+						
+						See https://openjdk.java.net/contribute/
+
+					</textarea>
+				</section>
+
+
+				<section data-markdown>
+					<textarea data-template>
+						Some things become easier long-term:
+						
+						OpenJDK will switch to git/github.
+
+					</textarea>
+				</section>
+
+
+				<section data-markdown>
+					<textarea data-template>
+						Thank you :)
+					</textarea>
+				</section>
+
+
+
+
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+				],
+				transitionSpeed: 'fast'
+			});
+		</script>
+	</body>
+</html>
+
